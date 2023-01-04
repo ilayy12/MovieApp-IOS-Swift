@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="130" id="KGk-i7-Jjw" customClass="RecommendationTableViewCell" customModule="Movies" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="398" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="398" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RR9-jc-pyr">
+                        <rect key="frame" x="0.0" y="0.0" width="398" height="120"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5qw-9n-gCk">
+                                <rect key="frame" x="0.0" y="0.0" width="398" height="5"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="wUL-ua-qlL">
+                                    <rect key="frame" x="0.0" y="0.0" width="398" height="5"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <color key="backgroundColor" systemColor="systemFillColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="k6q-dn-bVR"/>
+                                </constraints>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hhb-Tz-2Vd">
+                                <rect key="frame" x="0.0" y="5" width="398" height="110"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="movieDefault" translatesAutoresizingMaskIntoConstraints="NO" id="y3j-ug-yjc">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="110" id="Z47-cV-fOw"/>
+                                            <constraint firstAttribute="width" constant="90" id="gcC-Ui-Fn4"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="p7p-2L-Zug">
+                                        <rect key="frame" x="90" y="0.0" width="273" height="110"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <color key="textColor" systemColor="systemGray2Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eD-fm-c3F">
+                                        <rect key="frame" x="363" y="0.0" width="35" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="35" id="vYt-je-HVZ"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="star.slash" catalog="system">
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="favButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="XNo-sA-Gf0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.28680622579999998" green="0.25678351519999998" blue="0.35687381029999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </stackView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RwJ-BT-8Nt">
+                                <rect key="frame" x="0.0" y="115" width="398" height="5"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ZE4-Od-3gk">
+                                    <rect key="frame" x="0.0" y="0.0" width="398" height="5"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <color key="backgroundColor" systemColor="systemFillColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="uiO-bl-a1Y"/>
+                                </constraints>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RR9-jc-pyr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="7Tp-zR-FAK"/>
+                    <constraint firstItem="RR9-jc-pyr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="FBj-f4-zcc"/>
+                    <constraint firstAttribute="bottom" secondItem="RR9-jc-pyr" secondAttribute="bottom" id="wWa-Np-F0z"/>
+                    <constraint firstAttribute="trailing" secondItem="RR9-jc-pyr" secondAttribute="trailing" id="ywt-BT-OC3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="favButton" destination="3eD-fm-c3F" id="g3U-P1-aY4"/>
+                <outlet property="mainStack" destination="Hhb-Tz-2Vd" id="JqY-jS-u91"/>
+                <outlet property="recMovieImg" destination="y3j-ug-yjc" id="5gQ-Ut-0WG"/>
+                <outlet property="recMovieName" destination="p7p-2L-Zug" id="bNC-jp-698"/>
+            </connections>
+            <point key="canvasLocation" x="191.30434782608697" y="24.776785714285712"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="movieDefault" width="225" height="225"/>
+        <image name="star.slash" catalog="system" width="128" height="116"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

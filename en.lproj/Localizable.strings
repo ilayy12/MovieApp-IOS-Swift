@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  Movies
+
+  Created by aytü on 29.07.2022.
+  
+*/
+"vote" = "Rate: ";
+"movies" = "MOVIES";
+"favorites" = "FAVORITES";
+"date" = "Date: ";
+"runtime" = "Runtime: ";
+"revenue" = "Revenue: ";
+"budget" = "Budget: ";
+"genre" = "Genre: ";
+"genres" = "Genres: ";
+"overview" = "Overview";
+"prodComp" = "Production Companies";
+"cast" = "CAST";
+"recommendations" = "RECOMMENDATIONS";
+"movieDetails" = "Movie Details";
+"homePageCNBF" = "HomePage Can Not Be Found!";
+"castDetails" = "Cast Details";
+"birthPlace" = "Place Of Birth: ";
+"biography" = "Biography: ";
+"search" = "SEARCH";
+"searchPlaceholder" = "Let's Find!";
+"TBPopular" = "Popular Movies";
+"TBFavorites" = "Favorites";
+"TBSearch" = "Search";
+"originalTitle" = "Original Title:";
+"noFavorited" = "!!!There are no Favorite Movies at all!!!";

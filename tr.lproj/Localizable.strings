@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  Movies
+
+  Created by aytü on 29.07.2022.
+  
+*/
+"vote" = "Puan: ";
+"movies" = "FİLMLER";
+"favorites" = "FAVORİLER";
+"date" = "Tarih: ";
+"runtime" = "Süre: ";
+"revenue" = "Hasılat: ";
+"budget" = "Bütçe: ";
+"genre" = "Tür: ";
+"genres" = "Türler: ";
+"overview" = "Özet";
+"prodComp" = "Yapım Şirketleri";
+"cast" = "OYUNCULAR";
+"recommendations" = "ÖNERİLER";
+"movieDetails" = "Film Detayları";
+"homePageCNBF" = "Anasayfa Bulunamadı!";
+"castDetails" = "Oyuncu Detayları";
+"birthPlace" = "Doğum Yeri: ";
+"biography" = "Biyografi: ";
+"search" = "ARAMA";
+"searchPlaceholder" = "Film Bul!";
+"TBPopular" = "Popüler Filmler";
+"TBFavorites" = "Favoriler";
+"TBSearch" = "Arama";
+"originalTitle" = "Orijinal İsim:";
+"noFavorited" = "!!!Hiç favorilenmiş filminiz yok!!!";
